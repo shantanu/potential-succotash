@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body { 
+    height: 100%;
+
+}
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Titillium Web', monospace;   
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}

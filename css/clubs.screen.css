@@ -1,0 +1,74 @@
+/* ----------------------------------
+    SCREEN SCREEN STYLES - CLUBS CONTAINER
+--------------------------------- */
+
+.clubsContainer { 
+    background: url("../assets/dust_scratches.png");
+
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.clubsContainer > .clubsHeader {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 65%, 0 100%);
+    background: #8B0000;
+    width: 100%;
+    color: #eeeeee;
+    padding: 2em 0 4em 0;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clubsContainer > .clubsHeader > h1 { 
+    font-family: 'Slabo 27px', 'sans-serif';
+}
+
+.typewriter h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: typing 1.5s steps(20, end);
+}
+
+.clubsContainer > .clubsContent {
+    position: relative;
+    display: flex;
+    width: 100%;
+    flex-basis: 100%;
+    flex-flow: row wrap;
+    flex: 1;
+    justify-content: center;
+}
+
+.clubsContainer > .clubsContent img { 
+    display: block;
+    max-width: 20vw;
+
+    width: auto;
+    height: auto;
+
+    margin: 0 auto 10vh auto;
+
+}
+
+
+
+.clubsContainer > .clubsContent > .qfc, .rucp {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 45%;
+    padding: 5%;
+    text-align: center;
+}
+
+
