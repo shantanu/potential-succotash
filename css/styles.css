@@ -29,7 +29,6 @@ p {
     --------------------------------- */
 .nameContainer {
     background: url("../assets/connectwork.png");
-    box-shadow: 0px 5px 8px #888888;
 
     display: flex;
     flex-direction: row;
@@ -37,13 +36,14 @@ p {
     align-items: center;
 
     flex-wrap: wrap;
+
+    position: relative;
 }
 
 
 
 .nameContainer > .header {
     padding: 3em;
-    margin: 100% auto;
     background: rgba(0, 0, 0, 0.25);
     -webkit-animation-duration: 1.5s;
             animation-duration: 1.5s;
@@ -108,5 +108,9 @@ p {
 .nameContainer > .enter {
     color: #eeeeee;
 
-    bottom: 0px;
+    position: absolute;
+    bottom: 1vw;
+    text-align: center;
+
+    font-size: 2em;
 }
