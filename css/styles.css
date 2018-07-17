@@ -60,28 +60,6 @@ p {
 
 }
 
-@-webkit-keyframes fadeInUp {
-    0% {
-       opacity: 0;
-       -webkit-transform: translateY(+75px);
-    }
-    100% {
-       opacity: 1;
-       -webkit-transform: translateY(0);
-    }
-}
- 
-@keyframes fadeInUp {
-    0% {
-       opacity: 0;
-       transform: translateY(+75px);
-    }
-    100% {
-       opacity: 1;
-       transform: translateY(0);
-    }
-}
-
 .nameContainer > .header > h1 { 
     color: #eeeeee;
     font-size: 65px;
@@ -109,6 +87,15 @@ p {
     position: absolute;
     bottom: 1vw;
     text-align: center;
+
+    -webkit-animation-duration: 1.5s;
+            animation-duration: 1.5s;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+    -webkit-animation-delay: 2s;        
+            animation-delay: 2s;
 }
 
 .nameContainer > .enter > a {
