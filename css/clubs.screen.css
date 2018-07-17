@@ -3,7 +3,7 @@
 --------------------------------- */
 
 .clubsContainer { 
-    background: url("../assets/dust_scratches.png");
+    background: url("../assets/zig\ zag\ wool.png");
 
     overflow: hidden;
 
@@ -12,6 +12,8 @@
     justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
+
+    position: relative;
 }
 
 
@@ -45,19 +47,21 @@
     display: flex;
     width: 100%;
     flex-basis: 100%;
-    flex-flow: row wrap;
+    flex-flow: row;
     flex: 1;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    height: 90%;
 }
 
 .clubsContainer > .clubsContent img { 
     display: block;
-    max-width: 20vw;
+    max-height: 10vw;
 
     width: auto;
     height: auto;
 
-    margin: 0 auto 10vh auto;
+    margin: 0 auto 5vh auto;
 
 }
 
@@ -66,9 +70,58 @@
 .clubsContainer > .clubsContent > .qfc, .rucp {
     display: flex;
     flex-direction: column;
-    flex-basis: 45%;
-    padding: 5%;
-    text-align: center;
+    flex-basis: 40%;
+    padding: 3%;
+    margin-top: 2%;
+    justify-content: space-between;
+    align-items: center;
+    background: url("../assets/dust_scratches.png");
+    border-radius: 5px;
 }
 
+button.lm {
+    color: #8B0000;
+    width: 20%;
+    padding: 15px 8px;
+    background: transparent;
+    border: 2px solid #8B0000;
+    border-radius: 6px;
+    margin-top: 20px;
+    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+}
 
+button.lm:hover {
+    background-color: #6B0000;
+    color: white;
+}
+
+.clubsContainer > .continue {
+    position: absolute;
+    bottom: 1vw;
+    text-align: center;
+
+    -webkit-animation-duration: 1.5s;
+            animation-duration: 1.5s;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+    -webkit-animation-delay: 2s;        
+            animation-delay: 2s;
+}
+
+.clubsContainer > .continue > a {
+    color: #cccccc;
+    
+    padding: 10px;
+    text-decoration: none;
+    
+}
+
+.clubsContainer > .continue > a > i {
+    background-color: #8b0000;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+}
